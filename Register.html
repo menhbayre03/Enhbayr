@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="container_child">
+
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span> 
+                <strong><h3>Registration successful<span style="color: rgba(172, 255, 47, 0.795); margin-left: 5px;"><i class="fa-solid fa-check"></i></span></h3></strong>
+                <h4 style="margin-top: 5px;">Go to the sign in<span style="color: rgb(87, 243, 87); margin-left: 5px;"><i class="fa-solid fa-circle-arrow-right"></i></span></h4>
+            </div>
+
+            <div class="test" style="display: none; padding: 6px 25px;"> 
+                <p>Зөвхөн үсэг орсон байх ёстой.</p>
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            
+            <div class="test1" style="display: none; text-align: center; padding: 6px;"> 
+                <p1></p1>
+            </div>
+            
+            <div class="register">
+
+                <div class="register_contain">
+
+                    <div class="register_contain_child">
+                        <div class="header_section">Registration</div>
+                    </div>
+                    <div class="register_contain_child">
+                        <input id="fname" autocomplete="off" autofocus type="text" placeholder="First name...">
+                        <input id="lname" autocomplete="off" autofocus type="text" placeholder="Last name...">
+                    </div>
+                    <div class="register_contain_child">
+                        <input id="dugaar" autocomplete="off" autofocus type="text" placeholder="Phone...">
+                        <input id="email" autocomplete="off" autofocus type="text" placeholder="Email...">
+                        <input id="password" autocomplete="off" autofocus type="text" placeholder="Password...">
+                    </div>
+                    <div class="register_contain_child">
+                        <div class="sign" id="sign">Register</div>
+                    </div>
+
+                </div>
+
+                <div class="sign_in">
+                     <a href="./Register.js">
+                        <h4>Sign in <span style="margin-left: 3px;"><i class="fa-solid fa-arrow-right"></i></span></h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Бие даалт.js"></script>
+</body>
+</html>

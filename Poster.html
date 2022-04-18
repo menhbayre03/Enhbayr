@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Poster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Poster.css">
+</head>
+  <body>
+    
+    <div class="container">
+      <div class="profile">
+        <div class="profile_img">
+        
+          <label for="img">
+            <div class="avatar">
+                <img id="avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png" alt="">
+            </div>
+            <input type="file" hidden id="img">
+          </label>
+
+          <h2 id="header_section_name">Enhbayr</h2>
+
+          <div class="impormation">
+            <div class="impormation_section">
+              <i class="fa-solid fa-user"></i>
+              <h2>Personal impormation</h2>
+            </div>
+
+            <div class="section_pass">
+              <div class="impormation_firstName">FirstName :</div>
+              <div class="impormation_lastName">LastName :</div>
+              <div class="impormation_phone">Number :</div>
+              <div class="impormation_email">Email :</div>
+              <div class="impormation_password">Password</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Contents -->
+
+       <!-- <div class="contents">
+          <h2 id="section">Posts</h2>
+          <input id="input" type="text" placeholder="Enter something post?" readonly>
+
+          <div class="post">
+            <div class="create_post">
+              <h2>Create post</h2>
+              <i class="fa-solid fa-circle-xmark" onclick="post.style.display = 'none'"></i>
+          </div>
+
+            <div class="content">
+              <div class="content_child">
+                <textarea autocomplete="off" autofocus id="write_text" placeholder="Do you enter post?"></textarea>
+              </div>
+              <div class="enter_post">Post</div>
+            </div>
+          </div> -->
+
+          <!-- Poster -->
+          <!-- <div class="poster" id="poster">
+            <div class="header_poster">
+              <div class="image">
+                <img src="#avatar" alt="">
+              </div>
+              <div class="name">
+                <strong>Enhbayr</strong>
+                <p>Date</p>
+              </div>
+              <i class="fa-solid fa-circle-xmark" onclick="poster.style.display = 'none'"></i>
+            </div>
+            <textarea  id="poster_text" cols="40" rows="3" readonly></textarea>
+          </div> -->
+
+          <!-- <div class="poster"></div> -->
+          <!-- </div> -->
+          
+          <form id="post">
+            <input autocomplete="off" autofocus type="text" placeholder="Write a text..." name="name"  required />
+            <i id="clr_btn" class="fa-solid fa-circle-xmark"></i>
+            <button>Enter post</button>
+          </form>
+          <div class="contain_post"></div>
+
+          <a href="./login.html">
+            <div class="butsah">Return to the login area</div>
+          </a>
+
+    </div>
+  <script src="./Poster.js"></script>
+  </body>
+</html>

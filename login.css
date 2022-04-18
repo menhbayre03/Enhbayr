@@ -5,62 +5,137 @@
     box-sizing: border-box;
 }
 
-.container 
-{
+.container   {
     background-image: url(http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQYhrOxaIOIdS44MkhUAF_8SWCseVVjuIRizuWipZuB_1iebp_FbT5wcrJhRCy1yJylA4dfNRN0EDf4QaBFuWk);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-.header
-{
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(3px);
-    background-color: rgba(33, 5, 51, 0.5);
+.header{
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    background-color: rgba(86, 86, 86, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.header_child{
-    width: 500px;
-    height: 350px;
-    background-color: rgba(245, 245, 245, 0.281);
-    box-shadow: -1px -1px 60px 10px #f2f2f279;
+.section{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: initial;
+    color: rgba(155, 245, 70, 0.788);
+    text-align: center;
+    padding: 4rem 5px;
+    position: absolute;
+    top: 1rem;
+}
+
+.login {
+    width: 400px;
+    height: 370px;
+    background-color: rgba(0, 0, 0, 0.445);
+    box-shadow: -1px -1px 60px 10px rgba(0, 0, 0, 0.671);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
+    position: relative;
 }
 
-.login{
+.header_login{
     display: grid;
-    gap: .2rem;
-    grid-template-columns: 500px;
+    grid-template-columns: 400px;
     grid-template-rows: 90px repeat(3, 80px);
 }
 
-.section_login{
-    width: 100%;
-    height: 100%;
+.newtreh{
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    text-align: center;
+    color: #f2f2f2e1;
+    padding: 5px;
+    background-color: #358bfcb7;
+    box-shadow: 0 0 10px #166fe5d8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.content{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section_login_child{
-    width: 200px;
+input{
+    width: 250px;
     height: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.137);
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 0 5px #f2f2f2;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: .5rem;
+}
+
+.header_sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign{
+    width: 200px;
+    height: 35px;
+    background-color: #1670e59f;
+    box-shadow: 0 0 10px #166fe5d8;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
     text-align: center;
+    letter-spacing: 1px;
     padding: 5px;
     color: white;
-    border: 1px solid rgba(4, 236, 128, 0.671);
-    box-shadow: 0 0 5px 2px rgba(36, 233, 10, 0.781);
-    border-radius: 20px;
     cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.sign:hover{
+    background-color: #13a533d8;
+    box-shadow: 0 0 10px #13a533d8;
+    color: #f2f2f2;
+}
+
+.sign_in{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin: auto;
+    border-bottom: 2px solid rgba(231, 229, 229, 0.329);
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.sign_in h4{
+    transition: .2s ease-in-out;
+}
+
+.sign_in h4:hover{
+    color: rgba(68, 235, 82, 0.959);
+}
+
+.sign_in a{
+    color: white;
+    text-decoration: none;
 }
